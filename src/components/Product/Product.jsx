@@ -10,10 +10,10 @@ const Product = (props) => {
 
 
     return (
-        <div className='product'>
+        <div className='product flex flex-col justify-between'>
             <img src={img} alt="" />
             <div className='product-info'>
-                <h6 className='product-name'>{name}</h6>
+                <h6 className='product-name text-white font-semibold text-xl'>{name}</h6>
                 <p>Price: ${price}</p>
                 <p>Manufacturer: {seller}</p>
                 <p>Rating: {ratings} Stars</p>
